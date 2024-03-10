@@ -1,0 +1,119 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* headerItem */
+.headerItem {
+  position: fixed; /* 固定在页面顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  z-index: 99;
+  background-color: #141929; /* 背景颜色为深蓝色 */
+}
+
+/* titleItem */
+.titleItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff; /* 文字颜色为白色 */
+  padding: 14px 0 10px 44px; /* 上、下、左边距设置 */
+}
+
+/* rightHeader */
+.rightHeader {
+  flex-grow: 1; /* 自动扩展剩余空间 */
+  display: flex;
+  justify-content: flex-end; /* 右对齐 */
+  align-items: center;
+  color: #fff; /* 文字颜色为白色 */
+}
+
+/* ant-anchor */
+.ant-anchor {
+  display: flex;
+  margin: 40px;
+}
+
+.ant-anchor-link {
+  margin-right: 20px; /* 右边距设置为20像素 */
+}
+
+.ant-anchor-link:last-child {
+  margin-right: 0; /* 最后一个元素的右边距设置为0 */
+}
+
+/* ant-anchor-link-title */
+.ant-anchor-link-title {
+  color: #fff; /* 文字颜色为白色 */
+}
+
+/* entryItem */
+.entryItem {
+  display: flex;
+  align-items: center;
+  margin-right: 44px; /* 右边距设置为44像素 */
+}
+
+.workEntry,
+.regEntry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 36px;
+  border-radius: 18px; /* 圆角边框半径设置为18像素 */
+  font-size: 14px;
+  font-weight: 500;
+  color: #141929; /* 文字颜色为深蓝色 */
+  margin-right: 20px; /* 右边距设置为20像素 */
+  cursor: pointer;
+}
+
+.workEntry {
+  background-color: #fff; /* 背景颜色为白色 */
+}
+
+.regEntry {
+  background-color: #f5a623; /* 背景颜色为橙色 */
+  color: #fff; /* 文字颜色为白色 */
+}
+
+/* partItem */
+.partItem {
+  min-height: 600px;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff3f6; /* 背景颜色为浅灰色 */
+}
+
+.partItem h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px; /* 下边距设置为40像素 */
+}
+
+.partItem p {
+  font-size: 18px;
+  color: #666; /* 文字颜色为灰色 */
+}
+.partItem img {
+  width: 1665px;
+  height: 488px;
+}
+#part-0 {
+  background-color: #050a19;
+}

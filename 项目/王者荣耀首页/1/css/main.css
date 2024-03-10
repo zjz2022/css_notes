@@ -1,0 +1,286 @@
+/* 首页的css */
+
+/* 整个屏幕的bg图 */
+body {
+  background: url('../img/bgImg.jpg') no-repeat;
+}
+.header {
+  width: 100%;
+  height: 84px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.wrap {
+  width: 1300px;
+  height: 84px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrap img.logo {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.ulWrap {
+  width: 890px;
+  margin: 0 auto;
+  display: block;
+}
+.ulWrap li {
+  float: left;
+  color: #c9c9dd;
+  width: 115px;
+  height: 64px;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0 0 0;
+  cursor: pointer;
+}
+.ulWrap li em {
+  color: #858792;
+  font-size: 12px;
+  display: block;
+  padding: 5px 0 0 0;
+}
+
+.ulWrap li:hover,
+.ulWrap li:hover em {
+  color: #eed68a;
+  background: url(../img/icons.png) no-repeat left top;
+}
+/* 登录div */
+.loginWrap {
+  width: 132px;
+  height: 57px;
+  position: absolute;
+  right: 0;
+  top: 21px;
+  padding-left: 50px;
+}
+.loginWrap img.avatar {
+  border: 1px solid #d9ad50;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.loginWrap a {
+  color: white;
+  font-size: 16px;
+}
+.loginWrap p {
+  color: #858792;
+  font-size: 14px;
+}
+/* 二级导航，向下弹出，半透明导航 */
+.subNav {
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.header:hover .subNav {
+  height: 200px;
+}
+.subNav ul.subUlWrap {
+  display: block;
+  width: 890px;
+  height: 240px;
+  margin: 10px auto;
+}
+.subNav ul.subUlWrap li {
+  width: 110px;
+  float: left;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.subNav ul.subUlWrap li a {
+  color: #c9c9dd;
+  display: block;
+}
+/* main,开始 */
+.mainWrap {
+  width: 1200px;
+  height: 342px;
+  margin: 20px auto;
+  margin-top: 480px;
+}
+.sliderWrap {
+  width: 604px;
+  height: 342px;
+  float: left;
+}
+.listPic {
+  width: 604px;
+  height: 298px;
+  position: relative;
+}
+.listPic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btnWrap {
+  width: 604px;
+  height: 44px;
+}
+.btnWrap a.picBtn {
+  display: block;
+  width: 120.8px;
+  height: 44px;
+  background: #000;
+  float: left;
+  color: #a0b293;
+  font-size: 12px;
+  text-align: center;
+  line-height: 44px;
+}
+.btnWrap a.picBtn:hover {
+  color: #feaa33;
+  background-color: #262626;
+}
+/* new_center 新闻中心 */
+.news_center {
+  width: 325px;
+  height: 342px;
+  float: left;
+  background-color: #252a35;
+  padding: 0 17px;
+  position: relative;
+}
+.news_center ul.titleUl {
+  display: block;
+  margin: 0 auto;
+  width: 325px;
+  height: 45px;
+  border-bottom: 2px solid #000;
+}
+.news_center ul.titleUl > li {
+  transition: all 0.225s ease-out;
+}
+.news_center ul.titleUl li {
+  float: left;
+  width: 52px;
+  height: 45px;
+  font-size: 14px;
+  text-align: center;
+  color: #bec1d0;
+  cursor: pointer;
+  line-height: 45px;
+  padding-bottom: 3px;
+}
+.news_center ul.titleUl li:hover {
+  color: #feaa33;
+  border-bottom: 3px solid #feaa33;
+  padding: 0;
+}
+
+.news_center a.more_a {
+  color: #bec1d0;
+  position: absolute;
+  top: 11px;
+  right: 43px;
+  font-size: 14px;
+}
+/* 新闻中心的列表容器 */
+.newUl {
+  width: 100%;
+}
+.newsListWrap ul.newsUl {
+  display: block;
+  margin-top: 20px;
+}
+.newsListWrap ul.newsUl li {
+  margin-bottom: 11px;
+  clear: both;
+  height: 22px;
+}
+.newsListWrap ul.newsUl li.li_title {
+  font-size: 18px;
+  color: #ddcc5a;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 15px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #414046;
+}
+.newsListWrap ul.newsUl li label,
+.newsListWrap ul.newsUl li span,
+.newsListWrap ul.newsUl li em {
+  float: left;
+}
+.newsListWrap ul.newsUl li label {
+  color: #1e96ab;
+  font-size: 12px;
+  padding: 1px 4px;
+  border: 1px solid #1e96ab;
+  margin: 0 1px;
+}
+.newsListWrap ul.newsUl li span {
+  font-size: 14px;
+  color: #bec1d0;
+  width: 230px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.newsListWrap ul.newsUl li em {
+  color: #999;
+  font-size: 12px;
+  margin: 2px 0 0 11px;
+}
+/* download面板 */
+.download {
+  width: 236px;
+  height: 342px;
+  float: left;
+  position: relative;
+}
+.download a {
+  display: block;
+  background-image: url(../img/icons.png);
+  background-repeat: no-repeat;
+}
+.download a.a_btn1 {
+  width: 236px;
+  height: 128px;
+  background-position: 0 -219px;
+  position: relative;
+  overflow: hidden;
+}
+.download a.a_btn2 {
+  width: 236px;
+  height: 106px;
+  background-position: 0 -350px;
+}
+.download a.a_btn3 {
+  width: 236px;
+  height: 108px;
+  background-position: 0 -461px;
+}
+.download a.a_btn1 span.ani {
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(-45deg);
+  filter: blur(32px);
+  animation: lightmove 1.6s ease-in infinite;
+}
+@keyframes lightmove {
+  0% {
+    left: -150px;
+    top: -120px;
+  }
+
+  to {
+    left: 150px;
+    top: 120px;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button</title>
+    <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_2259530_w2kw84nov1m.css" /> -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="line line1">
+      <button data-text="鼠标悬浮" class="btn btn-border-stroke btn-text-up">
+        <div class="btn-borders">
+          <div class="border-top"></div>
+          <div class="border-right"></div>
+          <div class="border-bottom"></div>
+          <div class="border-left"></div>
+        </div>
+        <span class="btn-text">鼠标悬浮</span>
+      </button>
+    </div>
+
+    <div class="line line2">
+      <button class="btn btn-hover-shine">鼠标悬浮</button>
+    </div>
+
+    <div class="line line3">
+      <button class="btn">鼠标悬浮</button>
+    </div>
+
+    <div class="line line4">
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger-menu">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </label>
+      <div class="overlay"></div>
+      <div class="tips">悬浮 & 点击</div>
+    </div>
+
+    <div class="line line5">
+      <input type="checkbox" id="light-switch" />
+      <label class="light-switch-label" for="light-switch">
+        <i class="iconfont icon-off"></i>
+      </label>
+      <div class="light"></div>
+      <div class="tips">点击</div>
+    </div>
+
+    <div class="line line6">
+      <div class="toggle toggle--daynight">
+        <input type="checkbox" id="toggle--daynight" class="toggle--checkbox" />
+        <label class="toggle--btn" for="toggle--daynight">
+          <span class="toggle--feature"></span>
+        </label>
+        <div class="day-mode"></div>
+      </div>
+      <div class="tips">点击</div>
+    </div>
+
+    <div class="line line7">
+      <div class="buttons-wrapper">
+        <input type="radio" id="dengpao" name="deng-btn" value="dengpao" checked />
+        <label for="dengpao">
+          <i class="iconfont icon-dengpao"></i>
+        </label>
+        <!-- <input type="radio" id="jienengdeng" name="deng-btn" value="jienengdeng" checked>
+            <label for="jienengdeng">
+                <i class="iconfont icon-jienengdeng"></i>
+            </label> -->
+        <input type="radio" id="diaodeng1" name="deng-btn" value="diaodeng1" />
+        <label for="diaodeng1">
+          <i class="iconfont icon-diaodeng1"></i>
+        </label>
+        <input type="radio" id="taideng" name="deng-btn" value="taideng" />
+        <label for="taideng">
+          <i class="iconfont icon-taideng"></i>
+        </label>
+        <input type="radio" id="taideng1" name="deng-btn" value="taideng1" />
+        <label for="taideng1">
+          <i class="iconfont icon-taideng1"></i>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+/* 页面的小部件 */
+.icon-hot {
+  width: 24px;
+  height: 24px;
+  background: url('../img/icons.png') no-repeat -140px -67px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-guard {
+  width: 24px;
+  height: 24px;
+  background: url('../img/icons.png') no-repeat -140px -9px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
