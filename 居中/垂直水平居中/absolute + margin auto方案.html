@@ -1,0 +1,37 @@
+<!-- 
+该方案的原理是：使用了 CSS 中的定位属性（absolute、fixed 等）后，如果 left 设置了具体值，没有设置 right 和 width，那么就会自动计算，把剩余的空间分配给 right 和 width。如果 left、right 和 width 都设置了具体值，并且没有占满横向空间，那么剩余空间就处于待分配状态，此时设置 margin: auto; 意味着把剩余的空间分配给 margin，并且左右均分，所以就实现了水平居中，垂直方向同理。
+
+但是要知道该方法的副作用：
+
+left: 0; right: 0; 相当于 width: 100%;
+top: 0; bottom: 0; 相当于 height: 100%;
+缺点：需要固定居中元素的宽高，否则其宽高会被设为 100%（副作用）。
+
+兼容性：
+
+IE 6+, Chrome 4+, Firefox 2+
+Android 2.3+, iOS 6+
+-->
+<style>
+  .outer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999;
+    position: relative;
+  }
+
+  .inner {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+</style>
+<div class="outer">
+  <div class="inner">hello world</div>
+</div>

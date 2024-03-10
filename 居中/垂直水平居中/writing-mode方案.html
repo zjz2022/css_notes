@@ -1,0 +1,38 @@
+<!-- 
+缺点：需要修改 DOM 结构（为了居中元素，需要嵌套两层父元素）。
+
+优点：不需要固定居中元素的宽高。
+
+兼容性：
+
+IE 6+, Chrome 4+, Firefox 3.5+
+Android 2.3+, iOS 5.1+
+-->
+<style>
+  .outer {
+    width: 900px;
+    height: 600px;
+    border: 1px solid #999;
+    writing-mode: vertical-lr;
+    text-align: center;
+  }
+  .content {
+    display: inline-block;
+    text-align: left; /* 重置文字位置（如果需要） */
+  }
+  .inner {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+    text-align: center;
+  }
+</style>
+<div class="outer">
+  <div class="inner">
+    <div class="content">Hello world</div>
+  </div>
+</div>

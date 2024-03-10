@@ -1,0 +1,31 @@
+<!-- 
+Flex方案的好处
+
+目前在移动端已经完全可以使用 Flex 布局了，PC 端需要看自己业务的兼容性情况。
+
+优点：不需要固定居中元素的宽高。
+
+兼容性：
+
+IE 10+, Chrome 4+, Firefox 2+
+Android 2.3+, iOS 6+ 
+-->
+<style>
+  .outer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+  }
+
+  .inner {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+  }
+</style>
+<div class="outer">
+  <div class="inner">hello world</div>
+</div>

@@ -1,0 +1,32 @@
+<!-- 
+  CSS3 中新增的 transform，其 translate 属性是根据元素自身计算的。
+  例如：设置 transform: translateX(-50%);，元素会向左偏移自身宽度的一半。
+  根据这一特性，很容易实现元素的居中： 
+  优点：不需要固定居中元素的宽高。
+
+  兼容性：
+
+  IE 9+, Chrome 4+, Firefox 3.5+
+  Android 3+, iOS 6+
+-->
+<style>
+  .outer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999;
+    position: relative;
+  }
+
+  .inner {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+<div class="outer">
+  <div class="inner">hello world</div>
+</div>

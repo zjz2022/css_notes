@@ -1,0 +1,29 @@
+<!-- 
+Grid方案
+该方案的兼容性比 Flex 差一点，同样的根据自己业务的兼容情况选择使用。
+
+优点：不需要固定居中元素的宽高。
+
+兼容性：
+
+IE 10+, Chrome 57+, Firefox 52+
+Android 6+, iOS 10.3+
+-->
+<style>
+  .outer {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999;
+    display: grid;
+  }
+
+  .inner {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    margin: auto;
+  }
+</style>
+<div class="outer">
+  <div class="inner">hello world</div>
+</div>
